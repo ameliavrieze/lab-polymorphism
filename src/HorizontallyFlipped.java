@@ -1,0 +1,31 @@
+
+public class HorizontallyFlipped implements TextBlock{
+TextBlock contents;
+
+public HorizontallyFlipped(TextBlock contents) {
+  this.contents = contents;
+}
+
+public String row(int i) throws Exception {
+  char[] contArray = this.contents.row(i).toCharArray();
+  char[] temp = new char[contArray.length];
+  int k = 0;
+  for (int j = contArray.length - 1; j >= 0; j--) {
+    temp[k] = contArray[j];
+    k++;
+  }
+  return temp.toString();
+}
+
+public int height() {
+  return this.contents.height();
+}
+
+public int width() {
+  return this.contents.width();
+}
+
+
+
+  
+}
