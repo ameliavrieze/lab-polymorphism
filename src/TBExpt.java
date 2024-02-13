@@ -38,6 +38,7 @@ public class TBExpt {
     */
     TBUtils.print(pen, new HorizontallyFlipped(vertical));
     TBUtils.print(pen, new VerticallyFlipped(vertical));
+    TBUtils.print(pen, new NumberedBlock(vertBox2));
 
     //Truncated t = new Truncated(vertBox2, 4);
 
@@ -49,3 +50,5 @@ public class TBExpt {
   } // main(String[])
 
 } // class TBExpt
+
+
