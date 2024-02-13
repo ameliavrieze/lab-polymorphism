@@ -36,11 +36,13 @@ public class TBExpt {
     TBUtils.print(pen, hcomp);
     TBUtils.print(pen, hcomp2);
     */
+    TBUtils.print(pen, new HorizontallyFlipped(vertical));
+    TBUtils.print(pen, new VerticallyFlipped(vertical));
 
-    Truncated t = new Truncated(vertBox2, 4);
+    //Truncated t = new Truncated(vertBox2, 4);
 
     // Print out the block
-    TBUtils.print(pen, t);
+    //TBUtils.print(pen, t);
 
     // Clean up after ourselves.
     pen.close();

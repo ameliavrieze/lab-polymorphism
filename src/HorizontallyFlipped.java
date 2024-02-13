@@ -14,7 +14,7 @@ public String row(int i) throws Exception {
     temp[k] = contArray[j];
     k++;
   }
-  return temp.toString();
+  return String.valueOf(temp);
 }
 
 public int height() {
