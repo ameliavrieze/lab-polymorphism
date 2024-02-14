@@ -56,7 +56,7 @@ public class TextLine implements TextBlock {
   } // width()
 
   public boolean equals (TextBlock other) {
-    if (other.getClass().equals("TextLine")) {
+    if (other instanceof TextLine) {
       TextLine temp = (TextLine) other;
       return line.equals(temp.line);
     } else {

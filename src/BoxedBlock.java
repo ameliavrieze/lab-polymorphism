@@ -65,7 +65,7 @@ public class BoxedBlock implements TextBlock {
   } // width()
 
   public boolean equals(TextBlock other) {
-    if (other.getClass().equals("BoxedBlock")) {
+    if (other instanceof BoxedBlock) {
       BoxedBlock temp = (BoxedBlock) other;
       return this.contents.equals(temp.contents);
     } else {

@@ -63,7 +63,7 @@ public class MutableLine implements TextBlock {
   } // width()
 
   public boolean equals(TextBlock other) {
-    if (other.getClass().equals("MutableLine")) {
+    if (other instanceof MutableLine) {
       MutableLine temp = (MutableLine) other;
       return this.line.equals(temp.line);
     } else {

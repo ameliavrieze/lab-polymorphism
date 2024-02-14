@@ -85,7 +85,7 @@ public class VComposition implements TextBlock {
   } // width()
 
   public boolean equals(TextBlock other) {
-    if (other.getClass().equals("VComposition")) {
+    if (other instanceof VComposition) {
       VComposition temp = (VComposition) other;
       return this.top.equals(temp.top) && this.bottom.equals(temp.bottom);
     } else {

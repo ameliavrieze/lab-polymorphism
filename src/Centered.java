@@ -49,7 +49,7 @@ public class Centered implements TextBlock {
   }
 
   public boolean equals(TextBlock other) {
-    if (other.getClass().equals("Centered")) {
+    if (other instanceof Centered) {
       Centered temp = (Centered) other;
       return this.contents.equals(temp.contents);
     } else {

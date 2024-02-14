@@ -20,7 +20,7 @@ public class VerticallyFlipped implements TextBlock{
 
   
 public boolean equals(TextBlock other) {
-  if (other.getClass().equals("VerticallyFlipped")) {
+  if (other instanceof VerticallyFlipped) {
     VerticallyFlipped temp = (VerticallyFlipped) other;
     return this.contents.equals(temp.contents);
   } else {

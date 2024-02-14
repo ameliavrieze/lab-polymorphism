@@ -36,7 +36,7 @@ public class ReverseTruncate implements TextBlock {
   } 
 
   public boolean equals(TextBlock other) {
-    if (other.getClass().equals("ReverseTruncate")) {
+    if (other instanceof ReverseTruncate) {
       ReverseTruncate temp = (ReverseTruncate) other;
       return this.contents.equals(temp.contents);
     } else {

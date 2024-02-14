@@ -36,7 +36,7 @@ public class Truncated implements TextBlock {
   }
 
   public boolean equals(TextBlock other) {
-    if (other.getClass().equals("Truncaed")) {
+    if (other instanceof Truncated) {
       Truncated temp = (Truncated) other;
       return this.contents.equals(temp.contents);
     } else {

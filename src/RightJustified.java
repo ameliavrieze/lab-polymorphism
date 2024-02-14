@@ -40,7 +40,7 @@ public class RightJustified implements TextBlock {
   }  
 
   public boolean equals(TextBlock other) {
-    if (other.getClass().equals("RightJustified")) {
+    if (other instanceof RightJustified) {
       RightJustified temp = (RightJustified) other;
       return this.contents.equals(temp.contents);
     } else {
