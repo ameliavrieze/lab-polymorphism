@@ -67,4 +67,29 @@ public class TBUtils {
     return lotsOfSpaces.substring(0, len);
   } // spaces(int)
 
+  /*
+   * EQUALITY CHECK METHODS
+   */
+
+   static boolean equal (TextBlock t1, TextBlock t2) throws Exception {
+    boolean eql = true;
+    if (t1.height() == t2.height()) {
+      for(int i = 0; i < t1.height(); i++) {
+        if (!t1.row(i).equals(t2.row(i))) {
+          eql = false;
+        }
+      }
+    } else {
+      return false;
+    }
+    return eql;
+   }
+
+   static boolean eqv (TextBlock t1, TextBlock t2) throws Exception {
+    return t1.equals(t2);
+   }
+
+   static boolean eq (TextBlock t1, TextBlock t2) {
+    return t1 == t2;
+   }
 } // class TBUtils

@@ -25,6 +25,14 @@ public int width() {
   return this.contents.width();
 }
 
+public boolean equals(TextBlock other) {
+  if (other.getClass().equals("HorizontallyFlipped")) {
+    HorizontallyFlipped temp = (HorizontallyFlipped) other;
+    return this.contents.equals(temp.contents);
+  } else {
+    return false;
+  }
+}
 
 
   

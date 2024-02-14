@@ -26,4 +26,7 @@ public interface TextBlock {
    */
   public int width();
 
+  public boolean equals(TextBlock other);
+  
+
 } // interface TextBlock

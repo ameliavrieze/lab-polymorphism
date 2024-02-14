@@ -48,5 +48,13 @@ public class Centered implements TextBlock {
     return this.contents.width();
   }
 
-}
+  public boolean equals(TextBlock other) {
+    if (other.getClass().equals("Centered")) {
+      Centered temp = (Centered) other;
+      return this.contents.equals(temp.contents);
+    } else {
+      return false;
+    }
+  }
 
+}

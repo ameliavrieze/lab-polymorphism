@@ -1,4 +1,4 @@
-public class NumberedBlock implements TextBlock{
+/*public class NumberedBlock implements TextBlock{
   TextBlock contents;
 
   public NumberedBlock(TextBlock contents) {
@@ -21,4 +21,4 @@ public class NumberedBlock implements TextBlock{
     return this.contents.width() + 4;
   }
   
-}
+} */

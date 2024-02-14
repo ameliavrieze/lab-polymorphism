@@ -35,4 +35,13 @@ public class Truncated implements TextBlock {
     return this.contents.width();
   }
 
+  public boolean equals(TextBlock other) {
+    if (other.getClass().equals("Truncaed")) {
+      Truncated temp = (Truncated) other;
+      return this.contents.equals(temp.contents);
+    } else {
+      return false;
+    }
+  }
+
 }

@@ -55,4 +55,13 @@ public class TextLine implements TextBlock {
     return this.line.length();
   } // width()
 
+  public boolean equals (TextBlock other) {
+    if (other.getClass().equals("TextLine")) {
+      TextLine temp = (TextLine) other;
+      return line.equals(temp.line);
+    } else {
+      return false;
+    }
+  }
+  
 } // class TextLine

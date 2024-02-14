@@ -38,4 +38,14 @@ public class RightJustified implements TextBlock {
   public int width() {
     return this.contents.width();
   }  
+
+  public boolean equals(TextBlock other) {
+    if (other.getClass().equals("RightJustified")) {
+      RightJustified temp = (RightJustified) other;
+      return this.contents.equals(temp.contents);
+    } else {
+      return false;
+    }
+  }
+
 }
