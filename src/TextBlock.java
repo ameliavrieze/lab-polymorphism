@@ -2,6 +2,8 @@
  * Simple blocks of text for a lab on polymorphism
  * 
  * @author Samuel A. Rebelsky
+ * @author Siho Kim
+ * @author Amelia Vrieze
  */
 public interface TextBlock {
   // +---------+-----------------------------------------------------------

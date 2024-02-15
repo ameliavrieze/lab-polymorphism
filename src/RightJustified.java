@@ -1,3 +1,10 @@
+/**
+ * RightJustified: a TextBlock that moves every line of the inputted TextBlock to the right,
+ * adding spaces until reaching the width parameter.
+ * @author Siho Kim
+ * @author Amelia Vrieze
+ */
+
 public class RightJustified implements TextBlock {
 
   TextBlock contents;

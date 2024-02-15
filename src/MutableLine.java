@@ -2,6 +2,8 @@
  * One line of text that you can change.
  * 
  * @author Samuel A. Rebelsky
+ * @author Siho Kim
+ * @author Amelia Vrieze
  */
 public class MutableLine implements TextBlock {
   // +--------+------------------------------------------------------------

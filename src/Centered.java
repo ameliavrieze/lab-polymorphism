@@ -1,3 +1,10 @@
+/**
+ * Centered: a TextBlock that centers the inputted TextBlock 
+ * (adding spaces on each side)
+ * @author Siho Kim
+ * @author Amelia Vrieze
+ */
+
 public class Centered implements TextBlock {
 
   TextBlock contents;

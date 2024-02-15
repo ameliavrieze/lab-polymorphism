@@ -1,3 +1,9 @@
+/**
+ * Truncated: a TextBlock that cuts off the inputted TextBlock at the maximum width parameter.
+ * @author Siho Kim
+ * @author Amelia Vrieze
+ */
+
 public class Truncated implements TextBlock {
 
   private TextBlock contents;

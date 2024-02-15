@@ -2,6 +2,8 @@
  * One line of text.
  * 
  * @author Samuel A. Rebelsky
+ * @author Siho Kim
+ * @author Amelia Vrieze
  */
 public class TextLine implements TextBlock {
   // +--------+------------------------------------------------------------

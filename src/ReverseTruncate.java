@@ -1,3 +1,10 @@
+/**
+ * ReverseTruncate: a TextBlock that contains the inputted TextBlock, but only starting at the 
+ * inputted width index
+ * @author Siho Kim
+ * @author Amelia Vrieze
+ */
+
 public class ReverseTruncate implements TextBlock {
   
   TextBlock contents;

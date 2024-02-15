@@ -30,15 +30,16 @@ public class TBExpt {
     VComposition vertBox2 = new VComposition(hello, goodbye);
     HComposition hcomp = new HComposition(second, hello);
     HComposition hcomp2 = new HComposition(hello, second);
+    ReverseTruncate revtrunc = new ReverseTruncate(vertical, 4);
     /* 
     TBUtils.print(pen, vertBox);
     TBUtils.print(pen, vertBox2);
     TBUtils.print(pen, hcomp);
     TBUtils.print(pen, hcomp2);
     */
-    TBUtils.print(pen, new HorizontallyFlipped(vertical));
-    TBUtils.print(pen, new VerticallyFlipped(vertical));
-    //TBUtils.print(pen, new NumberedBlock(vertBox2));
+    //TBUtils.print(pen, new HorizontallyFlipped(vertical));
+    //TBUtils.print(pen, new VerticallyFlipped(vertical));
+    TBUtils.print(pen, revtrunc);
 
     //Truncated t = new Truncated(vertBox2, 4);
 

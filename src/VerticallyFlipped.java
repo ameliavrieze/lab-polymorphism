@@ -1,3 +1,10 @@
+/**
+ * VerticallyFlipped: a TextBlock that contains the inputted TextBlock flipped so that 
+ * they are reverse order top to bottom.
+ * @author Amelia Vrieze
+ * @author Siho Kim
+ */
+
 public class VerticallyFlipped implements TextBlock{
   TextBlock contents;
 

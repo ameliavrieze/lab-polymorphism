@@ -1,3 +1,9 @@
+/**
+ * HorizontallyFlipped: a TextBlock that flips the inputted TextBlock horizontally
+ * @author Amelia Vrieze
+ * @author Siho Kim
+ */
+
 
 public class HorizontallyFlipped implements TextBlock{
 TextBlock contents;
