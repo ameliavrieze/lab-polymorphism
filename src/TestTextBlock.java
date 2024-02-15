@@ -27,7 +27,6 @@ public class TestTextBlock {
   @Test
   public void testBoxedBlockEquivalence() throws Exception{
     BoxedBlock oneLine = new BoxedBlock(new TextLine("Hello"));
-    BoxedBlock empty = new BoxedBlock(new TextLine(""));
     BoxedBlock flippedBack = new BoxedBlock(new HorizontallyFlipped(new HorizontallyFlipped(new TextLine("Hello"))));
     assertEquals(TBUtils.equal(oneLine, flippedBack), true, "Testing equal with something flipped twice");
     assertEquals(TBUtils.eqv(oneLine, flippedBack), false, "Testing eqv with something flipped twice");
